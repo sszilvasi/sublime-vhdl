@@ -1,8 +1,8 @@
 <snippet>
 	<description>type .. array</description>
-	<tabTrigger>type_array</tabTrigger>
+	<tabTrigger>array</tabTrigger>
 	<scope>source.vhdl</scope>
 	<content>
-		<![CDATA[type ${1:type_name}_t is array(natural range <>) of ${2:element_type};$0]]>
+		<![CDATA[type ${1:identifier}_t is array(natural range <>) of ${2:element_type};$0]]>
 	</content>
 </snippet>

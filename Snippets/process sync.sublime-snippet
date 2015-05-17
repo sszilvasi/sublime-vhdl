@@ -1,6 +1,6 @@
 <snippet>
 	<description>synchronous process</description>
-	<tabTrigger>sync_proc</tabTrigger>
+	<tabTrigger>proc_sync</tabTrigger>
 	<scope>source.vhdl</scope>
 	<content><![CDATA[${1:identifier} : process (${2:rst}, ${3:clk})
 begin

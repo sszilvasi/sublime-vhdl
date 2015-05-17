@@ -1,0 +1,9 @@
+<snippet>
+	<description>type .. enum</description>
+	<tabTrigger>enum</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[type ${1:identifier}_t is (
+	${0:st_IDLE}
+);]]>
+	</content>
+</snippet>
