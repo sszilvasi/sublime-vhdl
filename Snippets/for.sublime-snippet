@@ -1,8 +1,8 @@
 <snippet>
+  <description>for loop</description>
   <tabTrigger>for</tabTrigger>
   <scope>source.vhdl</scope>
   <content>${1:identifier} : for ${2:i} in ${3:0} to ${4:10} loop
 	$0
-end loop ; -- ${1:identifier}</content>
-  <description>for loop</description>
+end loop; -- ${1:identifier}</content>
 </snippet>

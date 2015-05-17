@@ -1,10 +1,10 @@
 <snippet>
+  <description>entity</description>
   <tabTrigger>ent</tabTrigger>
   <scope>source.vhdl</scope>
   <content>entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
-  port (
+port (
 	${0:clock}
-  ) ;
-end entity ; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}</content>
-  <description>entity</description>
+);
+end entity; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}</content>
 </snippet>

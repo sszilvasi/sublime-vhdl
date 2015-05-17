@@ -1,13 +1,13 @@
 <snippet>
+  <description>case</description>
   <tabTrigger>case</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>case( ${1:signal_name} ) is
+  <content>case ${1:signal_name} is
 
-	when ${2:IDLE} =&gt;
+	when ${2:st_IDLE} =&gt;
 		$0
 
 	when others =&gt;
 
-end case ;</content>
-  <description>case</description>
+end case;</content>
 </snippet>

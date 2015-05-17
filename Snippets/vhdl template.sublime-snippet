@@ -1,20 +1,24 @@
 <snippet>
-  <tabTrigger>vhdl</tabTrigger>
+  <description>vhdl template</description>
+  <tabTrigger>template</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>library ieee ;
-	use ieee.std_logic_1164.all ;
-	use ieee.numeric_std.all ;
+  <content>library IEEE;
+    use IEEE.std_logic_1164.all;
+    use IEEE.numeric_std.all;
 
 entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
-  port (
-	${0:clock}
-  ) ;
+port (
+    ${0:clock}
+);
 end entity ; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}
 
 architecture ${2:arch} of ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 
+    -- Constants
+
+    -- Signals
+
 begin
 
-end architecture ; -- ${2:arch}</content>
-  <description>vhdl template</description>
+end architecture; -- ${2:arch}</content>
 </snippet>

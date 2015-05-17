@@ -1,12 +1,15 @@
 <snippet>
+  <description>architecture</description>
   <tabTrigger>arch</tabTrigger>
   <scope>source.vhdl</scope>
   <content>architecture ${1:arch} of ${2:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 
+    -- Constants
+
+    -- Signals
 	signal $0
 
 begin
 
-end architecture ; -- ${1:arch}</content>
-  <description>architecture</description>
+end architecture; -- ${1:arch}</content>
 </snippet>

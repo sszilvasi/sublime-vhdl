@@ -5,13 +5,13 @@
       "name": "VHDL",
       "description": "VHDL Package for Sublime Text 2/3",
       "author": "yangsu",
-      "details": "https://github.com/yangsu/sublime-vhdl",
-      "issues": "https://github.com/yangsu/sublime-vhdl/issues",
+      "details": "https://github.com/sszilvasi/sublime-vhdl",
+      "issues": "https://github.com/sszilvasi/sublime-vhdl/issues",
       "labels": ["language syntax"],
       "releases": [
         {
           "sublime_text": ">=3000",
-          "details": "https://github.com/yangsu/sublime-vhdl"
+          "details": "https://github.com/sszilvasi/sublime-vhdl"
         }
       ]
     }
