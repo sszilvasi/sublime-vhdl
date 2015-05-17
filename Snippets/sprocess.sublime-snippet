@@ -1,11 +1,15 @@
 <snippet>
-  <description>synchronous process</description>
-  <tabTrigger>spro</tabTrigger>
+  <description>synchronous reset process</description>
+  <tabTrigger>sproc</tabTrigger>
   <scope>source.vhdl</scope>
-  <content>${1:identifier} : process( ${2:clock} )
+  <content>${1:identifier} : process(${2:clock}, ${3:reset})
 begin
 	if rising_edge(${2:clock}) then
-		$0
+        if ${3:reset} = '1' then
+            $4
+        else
+            $0
+        end if;
 	end if;
 end process; -- ${1:identifier}</content>
 </snippet>

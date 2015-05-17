@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[to_unsigned(${1:value}, ${0:width})]]></content>
+    <tabTrigger>tou</tabTrigger>
+    <scope>source.vhdl</scope>
+    <description>to_unsigned</description>
+</snippet>

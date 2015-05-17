@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[std_logic]]></content>
+    <tabTrigger>sl</tabTrigger>
+    <scope>source.vhdl</scope>
+    <description>std_logic</description>
+</snippet>

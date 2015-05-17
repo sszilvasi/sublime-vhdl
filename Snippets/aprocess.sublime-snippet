@@ -1,9 +1,13 @@
 <snippet>
-  <description>asynchronous process</description>
-  <tabTrigger>apro</tabTrigger>
-  <scope>source.vhdl</scope>
-  <content>${1:identifier} : process(${2:sensitivity_list})
+    <description>asynchronous reset process</description>
+    <tabTrigger>apro</tabTrigger>
+    <scope>source.vhdl</scope>
+    <content>${1:identifier} : process(${2:clock}, ${3:reset})
 begin
-    $0
-end process; -- ${1:identifier}</content>
+    if ${3:reset} = '1' then
+        $4
+    elsif rising_edge(${2:clock}) then
+        $0
+    end if;
+end process; -- ${1:identifier}></content>
 </snippet>
