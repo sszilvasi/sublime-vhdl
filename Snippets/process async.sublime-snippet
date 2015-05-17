@@ -1,0 +1,9 @@
+<snippet>
+    <description>asynchronous process</description>
+    <tabTrigger>async_proc</tabTrigger>
+    <scope>source.vhdl</scope>
+    <content><![CDATA[${1:identifier} : process (${2:sensitivity_list})
+begin
+    $0
+end process; -- ${1:identifier}]]></content>
+</snippet>

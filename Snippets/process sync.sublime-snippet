@@ -1,0 +1,13 @@
+<snippet>
+    <description>synchronous process</description>
+    <tabTrigger>sync_proc</tabTrigger>
+    <scope>source.vhdl</scope>
+    <content><![CDATA[${1:identifier} : process (${2:rst}, ${3:clk})
+begin
+    if ${2:rst} = '1' then
+        $4
+    elsif rising_edge(${3:clk}) then
+        $0
+    end if;
+end process; -- ${1:identifier}]]></content>
+</snippet>
