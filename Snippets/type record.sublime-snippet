@@ -1,0 +1,8 @@
+<snippet>
+	<description>type .. record</description>
+	<tabTrigger>type_record</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[type ${1:type_name}_t is record
+	${2:entry_name}	: ${3:entry_type};$0
+end record;]]></content>
+</snippet>
