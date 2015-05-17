@@ -1,0 +1,13 @@
+<snippet>
+	<description>FSM synchronous process</description>
+	<tabTrigger>fsm_sync</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[p_${1:identifier}_fsm_sync : process (${2:rst}, ${3:clk})
+begin
+	if ${2:rst} = '1' then
+		${4:s_state} <= ${5:st_IDLE};
+	elsif rising_edge(${3:clk}) then
+		${4:s_state} <= ${6:s_state_next};$0
+	end if;
+end process; -- p_${1:identifier}_fsm_sync]]></content>
+</snippet>

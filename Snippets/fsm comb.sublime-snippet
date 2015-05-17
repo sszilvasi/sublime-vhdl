@@ -1,0 +1,23 @@
+<snippet>
+	<description>FSM combinational process</description>
+	<tabTrigger>fsm_comb</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[p_${1:identifier}_fsm_comb : process (
+	${2:s_state}
+)
+begin
+	-- Default values
+	${2:s_state}_next <= ${2:s_state};
+
+	-- Next state logic
+	case ${2:s_state} is
+
+		when ${4:st_IDLE} =>
+			$0
+
+		when others =>
+			null;
+
+	end case; -- ${2:s_state}
+end process; -- p_${1:identifier}_fsm_comb]]></content>
+</snippet>
