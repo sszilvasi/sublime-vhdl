@@ -1,21 +1,25 @@
 <snippet>
-  <description>entity architecture</description>
-  <tabTrigger>entarch</tabTrigger>
-  <scope>source.vhdl</scope>
-  <content>entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
+	<description>entity architecture</description>
+	<tabTrigger>entarch</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content>entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
+${3:generic (
+);}
 port (
-	${0:clock}
+	${4:rst}	: in  std_logic;
+	${5:clk}	: in  std_logic;
+
+	$0
 );
 end entity ; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}
 
 architecture ${2:arch} of ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 
-    -- Constant
+	-- Constants
 
-    -- Signals
+	-- Signals
 
 begin
-
 
 
 end architecture; -- ${2:arch}</content>
