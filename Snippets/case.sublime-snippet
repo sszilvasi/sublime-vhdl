@@ -1,13 +1,14 @@
 <snippet>
-  <description>case</description>
-  <tabTrigger>case</tabTrigger>
-  <scope>source.vhdl</scope>
-  <content>case ${1:signal_name} is
+	<description>case</description>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[case ${1:signal_name} is
 
-	when ${2:st_IDLE} =&gt;
+	when ${3:st_IDLE} =>
 		$0
 
-	when others =&gt;
+	when others =>
+		null;
 
-end case;</content>
+end case;]]></content>
 </snippet>

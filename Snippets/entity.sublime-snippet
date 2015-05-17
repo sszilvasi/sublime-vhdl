@@ -2,7 +2,7 @@
 	<description>entity</description>
 	<tabTrigger>ent</tabTrigger>
 	<scope>source.vhdl</scope>
-	<content>entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
+	<content><![CDATA[entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 ${2:generic (
 );}
 port (
@@ -11,5 +11,5 @@ port (
 
 	$0
 );
-end entity; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}</content>
+end entity; -- ${1:${TM_FILENAME/(.*?)(\..+)/$1/}}]]></content>
 </snippet>

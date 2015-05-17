@@ -1,7 +1,7 @@
 <snippet>
-  <description>else</description>
-  <tabTrigger>else</tabTrigger>
-  <scope>source.vhdl</scope>
-  <content>else
-	$0</content>
+	<description>else</description>
+	<tabTrigger>else</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[else
+	$0]]></content>
 </snippet>

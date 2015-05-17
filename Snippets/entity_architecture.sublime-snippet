@@ -2,7 +2,7 @@
 	<description>entity architecture</description>
 	<tabTrigger>entarch</tabTrigger>
 	<scope>source.vhdl</scope>
-	<content>entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
+	<content><![CDATA[entity ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 ${3:generic (
 );}
 port (
@@ -22,5 +22,5 @@ architecture ${2:arch} of ${1:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 begin
 
 
-end architecture; -- ${2:arch}</content>
+end architecture; -- ${2:arch}]]></content>
 </snippet>

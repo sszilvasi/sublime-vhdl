@@ -1,6 +1,6 @@
 <snippet>
-    <content><![CDATA[to_signed(${1:value}, ${0:width})]]></content>
-    <tabTrigger>tos</tabTrigger>
-    <scope>source.vhdl</scope>
-    <description>to_signed</description>
+	<description>to_signed</description>
+	<tabTrigger>tos</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[to_signed(${1:value}, ${0:width})]]></content>
 </snippet>

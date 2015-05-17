@@ -1,15 +1,15 @@
 <snippet>
-  <description>architecture</description>
-  <tabTrigger>arch</tabTrigger>
-  <scope>source.vhdl</scope>
-  <content>architecture ${1:arch} of ${2:${TM_FILENAME/(.*?)(\..+)/$1/}} is
+	<description>architecture</description>
+	<tabTrigger>arch</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[architecture ${1:arch} of ${2:${TM_FILENAME/(.*?)(\..+)/$1/}} is
 
-    -- Constants
+	-- Constants
 
-    -- Signals
-	signal $0
+	-- Signals
+	$0
 
 begin
 
-end architecture; -- ${1:arch}</content>
+end architecture; -- ${1:arch}]]></content>
 </snippet>

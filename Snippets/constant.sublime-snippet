@@ -1,6 +1,6 @@
 <snippet>
-    <content><![CDATA[constant c_${1:name}    : ${2:std_logic} := ${3:'0'};$0]]></content>
-    <tabTrigger>const</tabTrigger>
-    <scope>source.vhdl</scope>
-    <description>constant</description>
+	<description>constant</description>
+	<tabTrigger>const</tabTrigger>
+	<scope>source.vhdl</scope>
+	<content><![CDATA[constant c_${1:name}    : ${2:std_logic} := ${3:'0'};$0]]></content>
 </snippet>
